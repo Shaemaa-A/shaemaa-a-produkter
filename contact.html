@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <header>
+        <div>
+            
+     </div>
+     <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="Products.html">Products</a></li>   
+          <li><a href="about.html">about</a></li> 
+          <li><a href="contact.html">contact</a></li> 
+          <li><a href="Documentation.html">Documentation</a></li> 
+
+         
+
+        </ul>
+     </nav>
+    </header> 
+    <div class="content-left">
+
+
+
+    </div>
+    <div class="content-right">
+        
+    </div>
+    <h1>NEED HELP?</h1>
+    <p>If you dont find the answer you're looking for. Feel free to get in touch with our Customer Care team using your preferred contact method below. Please have (if applicable) your order number ready and a short description of what we can help you with. Our Customer Care is open from 8am to 8pm. You are Wellcome.</p>
+    <br>
+    <br>
+    <h3> COMMEN QUASTIONS</h3>
+
+
+    <button class="accordion">SHIPPING</button>
+    <div class="panel">
+      <p>Our standard delivery takes between 2-4 working days. Please note that during the high season and sales, your package may take longer. The current delivery time for your order is shown at checkout and on your order confirmation.
+        We deliver packages to people who are 16 years of age or older and have a registered home address in Sweden.</p>
+    </div>
+    
+    <button class="accordion">RETURN</button>
+    <div class="panel">
+      <p>If you wish to exchange or return products, you have the opportunity to do so within 30 days from the day you received your package. If your order is divided into several packages, our 30-day right of return will count from the day you received your last package. Please note that you can only make a return when all packages from the same order have been delivered.</p>
+    </div>
+    
+    <button class="accordion">TIME OF PAYMENT</button>
+    <div class="panel">
+      <p>Your purchase will be charged when your order is sent out. If you have paid by PayPal or by Gift Card, the payment will be taken as you complete the purchase. Some banks may show both a pre-authorisation and the actual subsequent charge. This amount will be automatically released. If this does not happen, we recommend that you contact your bank to expedite the release of the pre-authorisation.
+      </p>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
+</body>
+</html>
+
+
+ 
+          

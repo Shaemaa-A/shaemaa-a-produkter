@@ -1,0 +1,179 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+/*  display  */
+body{
+    font-family: 'time new roman', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.h1{
+    font-family:'Times New Roman', Times, serif;  
+}
+    
+  
+header{
+   height:100px;
+   width: 100vw;
+   background: antiquewhite; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+ul{
+    display: flex; 
+    list-style-type: none;
+    align-items: center;
+  
+}
+
+ul li a{
+    padding:0 20px;
+    text-decoration: none;
+    color: burlywood;
+    }
+
+li a::after{
+   content: ' ';  
+   display: block;
+   height: 4px;
+   width: 0;
+   background: white;
+   transition: all .58
+}
+
+li a :hover::after{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    border: 1px solid red;
+    height:calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img{
+    max-width: 500px 
+}
+
+.content-left{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    font-size:54px;
+    color:black;
+    text-transform: uppercase;
+}
+
+main h2{
+    font-size:25px;
+    color: red;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+}
+
+main p{
+    font-size: 14px;
+    font-weight: 400;
+    color: blue;
+    line-height: 31.5px;
+    margin:30px 0;
+
+}
+
+.cta{
+   padding: 15px; 
+   background: antiquewhite;
+   color: burlywood;
+   outline: none;
+   border: none;
+   font-weight: 700;
+   text-transform: uppercase;
+   border-radius: 50px;
+   
+}
+
+
+.cta a:visited{
+    color: burlywood; 
+}
+
+.cta a {
+    text-decoration: none;
+}
+
+.candles1{
+    display: flex;
+    float: right;
+    position:relative;
+}
+
+.container {
+    width: 95vw;
+    height: 900px;
+    margin: 30px auto;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-flow: column wrap; 
+  }
+  
+  .item {
+    margin: 20px;
+    padding: 110px;
+    background: burlywood;
+    color: white;
+    align-self:flex-start; 
+  }
+
+  .item > img{
+    max-width: 100px;
+    max-height: 90px;
+    border-radius: 3%;
+    margin: 1%;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .accordion {
+    background-color: antiquewhite;
+    color: burlywood;
+    cursor: pointer;
+    padding: 15px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(251, 230, 200); 
+  }
+  
+  .panel {
+    padding: 10px;
+    display: none;
+    background-color: whitesmoke;
+    overflow: hidden;
+  }
+
+  
+ 
